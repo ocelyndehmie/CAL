@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:background="#2196F3"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tip Calculator"
+        android:textColor="#F44336"
+        android:textSize="41sp" />
+
+    <EditText
+        android:id="@+id/AmountID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Enter the bill Amount"
+        android:textColor="#C8F44336"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Tip Precentage:"
+        android:textColor="#F44336"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/SeekBarID"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
+
+
+        <TextView
+            android:id="@+id/TipPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Per" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/TipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/TipResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:marginLeft="20dp"
+        android:marginTop="50dp"
+        android:text="TipAmount"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/TotalResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:text="Total Result"
+        android:textSize="20sp" />
+
+</LinearLayout>
+
+
+
+
+
+
+
